@@ -24,11 +24,37 @@ Node-RED acts as the central processing layer, providing:
 ## Feature
 
 ### Environmental Monitoring
+
 The ESP32 collects environmental data such as:
 - Temperature
 - Humidity
 - Rain status
 The collected data is transmitted to Node-RED through MQTT.
+
+### Real-Time Dashboard
+
+Node-RED provides a web dashboard for monitoring the system.
+The dashboard can display:
+- Temperature
+- Humidity
+- Rain status
+- Sensor data charts
+- Device status
+- Control interfaces
+
+### Remote Device Control
+
+The system allows devices connected to the ESP32 to be controlled remotely through the Node-RED dashboard.
+
+### Mobile Notifications
+
+**Pushsafer** is integrated into the Node-RED flow to send notifications to a mobile device when predefined conditions occur.
+Examples include:
+- High/Low temperature detection
+- Rain detection
+
+
+
 
 
 
