@@ -47,7 +47,6 @@ The dashboard can display:
 The system allows devices connected to the ESP32 to be controlled remotely through the Node-RED dashboard.
 
 ### Mobile Notifications
-
 **Pushsafer** is integrated into the Node-RED flow to send notifications to a mobile device when predefined conditions occur.
 Examples include:
 - High/Low temperature detection
