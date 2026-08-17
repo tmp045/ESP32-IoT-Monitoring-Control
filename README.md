@@ -15,6 +15,7 @@ Node-RED acts as the central processing layer, providing:
 - Mobile notifications through Pushsafer
 
 ## System Architecture
+
 ```text
 ├── Images/
     └── system-architecture.png
@@ -23,6 +24,11 @@ Node-RED acts as the central processing layer, providing:
 ## Feature
 
 ### Environmental Monitoring
+The ESP32 collects environmental data such as:
+- Temperature
+- Humidity
+- Rain status
+The collected data is transmitted to Node-RED through MQTT.
 
 
 
