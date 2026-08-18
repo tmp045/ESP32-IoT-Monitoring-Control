@@ -20,7 +20,7 @@ Node-RED acts as the central processing layer, providing:
 ├── Images/
     └── system-architecture.png
 ```
-
+---
 ## Feature
 
 ### Environmental Monitoring
@@ -48,7 +48,7 @@ The system allows devices connected to the ESP32 to be controlled remotely throu
 Examples include:
 - High/Low temperature detection
 - Rain detection
-
+---
 ## Technologies
 
 | Technology | Purpose |
@@ -60,6 +60,7 @@ Examples include:
 | Node-RED | Data processing, automation, and dashboard |
 | Pushsafer | Mobile push notifications |
 
+---
 ## Project Structure
 ```text
 ESP32-IoT-Monitoring-Control/
@@ -77,7 +78,7 @@ ESP32-IoT-Monitoring-Control/
 │
 └── README.md
 ```
-
+---
 ## How to Run
 
 ### ESP32
@@ -103,6 +104,7 @@ Do not upload the following information to a public repository:
 - Pushsafer private keys
 - API keys
 - Other sensitive credentials
+
 Use placeholder values in the source code or Node-RED configuration instead.
 
 
