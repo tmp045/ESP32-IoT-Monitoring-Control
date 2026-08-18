@@ -24,7 +24,6 @@ Node-RED acts as the central processing layer, providing:
 ## Feature
 
 ### Environmental Monitoring
-
 The ESP32 collects environmental data such as:
 - Temperature
 - Humidity
@@ -32,7 +31,6 @@ The ESP32 collects environmental data such as:
 The collected data is transmitted to Node-RED through MQTT.
 
 ### Real-Time Dashboard
-
 Node-RED provides a web dashboard for monitoring the system.
 The dashboard can display:
 - Temperature
@@ -43,7 +41,6 @@ The dashboard can display:
 - Control interfaces
 
 ### Remote Device Control
-
 The system allows devices connected to the ESP32 to be controlled remotely through the Node-RED dashboard.
 
 ### Mobile Notifications
@@ -52,8 +49,61 @@ Examples include:
 - High/Low temperature detection
 - Rain detection
 
+## Technologies
 
+| Technology | Purpose |
+|---|---|
+| ESP32 | Sensor data collection and device control |
+| C/C++ | ESP32 programming |
+| MQTT | IoT communication protocol |
+| MQTT Broker | Message exchange between devices and Node-RED |
+| Node-RED | Data processing, automation, and dashboard |
+| Pushsafer | Mobile push notifications |
 
+## Project Structure
+```text
+ESP32-IoT-Monitoring-Control/
+│
+├── ESP32/
+│   └── esp32_mqtt.ino
+│
+├── NodeRED/
+│   └── flows.json
+│
+├── Images/
+│   ├── dashboard1.png
+│   ├── dashboard2.png
+│   └── system-architecture.png
+│
+└── README.md
+```
+
+## How to Run
+
+### ESP32
+1. Open the ```.ino``` file using Arduino IDE or another compatible development environment.
+2. Configure the Wi-Fi credentials.
+3. Configure the MQTT broker and topics.
+4. Connect the required sensors and devices.
+5. Upload the program to the ESP32.
+
+### Node-RED
+1. Install and start Node-RED.
+2. Import ```NodeRED/flows.json.```
+3. Configure the MQTT broker.
+4. Configure the required dashboard nodes.
+5. Configure Pushsafer credentials locally.
+6. Deploy the flow.
+7. Open the Node-RED dashboard.
+
+### Security
+Do not upload the following information to a public repository:
+- Wi-Fi passwords
+- MQTT credentials
+- Pushsafer private keys
+- API keys
+- Other sensitive credentials
+Use placeholder values in the source code or Node-RED configuration instead.
 
 
 
