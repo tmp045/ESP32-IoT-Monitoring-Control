@@ -16,7 +16,7 @@ Node-RED acts as the central processing layer, providing:
 
 ## System Architecture
 
-```text
+```
 ├── Images/
     └── system-architecture.png
 ```
